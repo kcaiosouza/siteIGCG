@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-between w-full">
-      <header className="flex flex-col justify-between w-full h-screen">
+      <header className="flex flex-col justify-between w-full h-screen bg-[url('/img/irmaoOrandoNaMensagemBlur.jpg')] bg-cover backdrop-blur	">
         <nav className="flex w-full justify-between px-14 pt-6">
           <div>
             {/* LOGO NOVA AQUI (EM DESENVOLVIMENTO) */}
@@ -40,6 +40,20 @@ export default function Home() {
         </div>
       </header>
 
+      <div className="flex flex-col w-full py-14 px-32 items-center justify-between relative">
+        <div className="flex relative items-center pb-10">
+          <h2 className="text-[25px] font-bold">Sobre Nós</h2>
+          <span className="absolute left-0 bottom-10 opacity-30 font-extrabold text-[39px]">SOBRE</span>
+        </div>
+        <div className="mb-10">
+          <p className="font-light">De acordo com a Bíblia no Novo Testamento a igreja é o resultado do desfrute de Cristo pelos cristãos isto é, filhos de Deus. Possui tanto o aspecto universal, abrangendo todas as épocas, desde a primeira vinda do Senhor Jesus Cristo até a Sua segunda vinda, como possui também o aspecto local...</p>
+        </div>
+
+        <div>
+          <div className="bg-[#B3DCBE] rounded-xl font-light px-4 py-3 cursor-pointer hover:bg-[#00A859] transition">Continuar Lendo...</div>
+        </div>
+        {/* <div/> -> Referente ao fade em duas camadas  (POSITION ABSOLUTE) */}
+      </div>
     </main>
 
 
