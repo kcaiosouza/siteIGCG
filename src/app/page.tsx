@@ -133,6 +133,29 @@ export default function Home() {
         </div>
         {/* <div/> -> Referente ao fade em duas camadas  (POSITION ABSOLUTE) */}
       </div>
+
+      <div className="h-[4px] bg-[#00A859] w-full"/>
+      <footer className="bg-[#B3DCBE] w-full pt-8">
+        <div className="flex w-full items-center justify-around mb-5">
+          <div className="flex flex-col gap-1">
+            <h2 className="font-bold text-[23px]">Redes Sociais</h2>
+            <Link href="https://www.facebook.com/IgrejaCG" target="_blank"><p>Facebook</p></Link>
+            <Link href="https://www.instagram.com/igrejacg" target="_blank"><p>Instagram</p></Link>
+            <Link href="https://www.twitter.com/IgrejaCG" target="_blank"><p>Twitter</p></Link>
+            <Link href="https://www.tiktok.com/@IgrejaCG" target="_blank"><p>TikTok</p></Link>
+            <Link href="https://www.youtube.com/IgrejaCG" target="_blank"><p>Youtube</p></Link>
+          </div>
+          <div className="flex flex-col gap-1">
+            <h2 className="font-bold text-[23px]">Contato</h2>
+            <address>igrejacg@gmail.com</address>
+            <Link href="https://api.whatsapp.com/send?phone=5583986612596" target="_blank">Whatsapp</Link>
+          </div>
+        </div>
+        <div className="px-[100px]">
+          <p className="text-[13px] mb-3 text-center">Chegando-vos para ele, a pedra que vive, rejeitada, sim, pelos homens, mas para com Deus eleita e preciosa, também vós mesmos, como pedras que vivem, sois edificados casa espiritual para serdes sacerdócio santo, a fim de oferecerdes sacrifícios espirituais agradáveis a Deus por intermédio de Jesus Cristo. I Pe. 2:4-5</p>
+          <p className="text-center">Copyright 2008 - {data.getFullYear()} © Igreja em Campina Grande. Todos os Direito Reservados.</p>
+        </div>
+      </footer>
     </main>
   )
 }
