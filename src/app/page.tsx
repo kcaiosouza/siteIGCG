@@ -1,12 +1,10 @@
-'use client'
-
 import Link from "next/link";
 import { ReadingBible } from "@/components/readingBible";
-import { useRouter } from "next/navigation";
 // @ts-expect-error
 import date from "date-and-time";
 // @ts-expect-error
 import pt from "date-and-time/locale/pt"
+import { PortalButton } from "@/components/PortalButton";
 date.locale(pt);
 
 const infoReuniao = [
@@ -41,13 +39,8 @@ const infoReuniao = [
 ]
 
 export default function Home() {
-  const route = useRouter();
   const data = new Date();
   const dia = new Date().getDay();
-
-  function pushRouter(path:string){
-    route.push(path);
-  }
 
   return (
     <main className="flex flex-col justify-between w-full">
@@ -64,7 +57,7 @@ export default function Home() {
             <Link href='https://www.igcgmusic.com.br/'>IGCGMusic</Link>
           </div>
           <div>
-            <div className="bg-[#B3DCBE] border-[#00A859] border-[3px] px-3 py-1" onClick={() => {pushRouter('/login')}}>Portal IGCG</div>
+            <PortalButton/>
           </div>
         </nav>
 
@@ -90,12 +83,13 @@ export default function Home() {
         <div>
           <div className="bg-[#B3DCBE] rounded-xl font-light px-4 py-3 cursor-pointer hover:bg-[#00A859] transition">Continuar Lendo...</div>
         </div>
-        {/* <div/> -> Referente ao fade em duas camadas  (POSITION ABSOLUTE) */}
+        <div className="absolute h-20 bg-no-repeat bottom-[-71px] w-full bg-[url('/img/lineOpacity.png')]"/>
       </div>
 
       <div className="w-full h-[380px] bg-[url('/img/_MG_3908.jpg')] bg-cover bg-center"/>
 
       <div className="flex flex-col w-full py-14 px-32 items-center justify-between relative">
+      <div className="absolute h-20 bg-no-repeat top-[-71px] rotate-180 w-full bg-[url('/img/lineOpacity.png')]"/>
         <div className="flex relative items-center pb-10">
           <h2 className="text-[25px] font-bold">Cremos que...</h2>
           <span className="absolute left-[4px] bottom-10 opacity-30 font-extrabold text-[39px]">CREMOS</span>
@@ -107,12 +101,13 @@ export default function Home() {
         <div>
           <div className="bg-[#B3DCBE] rounded-xl font-light px-4 py-3 cursor-pointer hover:bg-[#00A859] transition">Continuar Lendo...</div>
         </div>
-        {/* <div/> -> Referente ao fade em duas camadas  (POSITION ABSOLUTE) */}
+        <div className="absolute h-20 bg-no-repeat bottom-[-71px] w-full bg-[url('/img/lineOpacity.png')]"/>
       </div>
 
       <div className="w-full h-[380px] bg-[url('/img/_MG_7670.jpg')] bg-cover bg-center"/>
 
       <div className="flex flex-col w-full py-14 px-32 items-center justify-between relative">
+      <div className="absolute h-20 bg-no-repeat top-[-71px] rotate-180 w-full bg-[url('/img/lineOpacity.png')]"/>
         <div className="flex relative items-center pb-10">
           <h2 className="text-[25px] font-bold">Nossas Reuniões</h2>
           <span className="absolute left-[9px] bottom-10 opacity-30 font-extrabold text-[39px]">REUNIÕES</span>
@@ -131,7 +126,6 @@ export default function Home() {
         <div>
           <div className="bg-[#B3DCBE] rounded-xl font-light px-4 py-3 cursor-pointer hover:bg-[#00A859] transition">Todas as Reuniões</div>
         </div>
-        {/* <div/> -> Referente ao fade em duas camadas  (POSITION ABSOLUTE) */}
       </div>
 
       <div className="h-[4px] bg-[#00A859] w-full"/>
