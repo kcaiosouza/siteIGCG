@@ -4,7 +4,7 @@ import { ReadingBible } from "@/components/readingBible";
 import date from "date-and-time";
 // @ts-expect-error
 import pt from "date-and-time/locale/pt"
-import { PortalButton } from "@/components/PortalButton";
+import { PortalButton } from "@/components/portalButton";
 date.locale(pt);
 
 const infoReuniao = [
@@ -50,11 +50,11 @@ export default function Home() {
             {/* LOGO NOVA AQUI (EM DESENVOLVIMENTO) */}
             <h3 className="w-[122px] font-bold text-[#002E18] text-[25px]">IGCG</h3>
           </div>
-          <div className="flex gap-12">
-            <Link href='/'>Início</Link>
-            <Link href='/'>Hinario</Link>
-            <Link href='/webradio'>Rádio</Link>
-            <Link href='https://www.igcgmusic.com.br/'>IGCGMusic</Link>
+          <div className="flex items-center gap-12">
+            <Link href='/' className="font-extrabold text-[17px] border-b-4 border-[#00A859]">Início</Link>
+            <Link href='/' className="font-extrabold text-[17px] border-b-0 hover:border-b-4 border-[#00A859] duration-100">Hinario</Link>
+            <Link href='/webradio' className="font-extrabold text-[17px] hover:border-b-4 border-[#00A859] transition-all">Rádio</Link>
+            <Link href='https://www.igcgmusic.com.br/' className="font-extrabold text-[17px] hover:border-b-4 border-[#00A859] transition-all">IGCGMusic</Link>
           </div>
           <div>
             <PortalButton/>

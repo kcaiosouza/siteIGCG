@@ -9,6 +9,6 @@ export async function PortalButton() {
   }
 
   return(
-    <div className="bg-[#B3DCBE] border-[#00A859] border-[3px] px-3 py-1" onClick={() => {pushRouter('/login')}}>Portal IGCG</div>
+    <div className="bg-[#B3DCBE] border-[#00A859] border-[3px] px-3 py-1 cursor-pointer" onClick={() => {pushRouter('/login')}}>Portal IGCG</div>
   )
 }
