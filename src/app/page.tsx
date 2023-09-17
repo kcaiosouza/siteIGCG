@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ReadingBible } from "@/components/readingBible";
-// @ts-expect-error
 import date from "date-and-time";
 // @ts-expect-error
 import pt from "date-and-time/locale/pt"
