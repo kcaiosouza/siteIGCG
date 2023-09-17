@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-12">
             <Link href='/' className="font-extrabold text-[17px] border-b-4 border-[#00A859]">Início</Link>
-            <Link href='/' className="font-extrabold text-[17px] border-b-0 hover:border-b-4 border-[#00A859] duration-100">Hinario</Link>
+            <Link href='/hinario' className="font-extrabold text-[17px] border-b-0 hover:border-b-4 border-[#00A859] duration-100">Hinario</Link>
             <Link href='/webradio' className="font-extrabold text-[17px] hover:border-b-4 border-[#00A859] transition-all">Rádio</Link>
             <Link href='https://www.igcgmusic.com.br/' className="font-extrabold text-[17px] hover:border-b-4 border-[#00A859] transition-all">IGCGMusic</Link>
           </div>
